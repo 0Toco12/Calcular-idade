@@ -39,3 +39,82 @@ public class Main {
         System.out.println("Você tem " + totalAno + " anos, "+ totalMes + " meses e "+ totalDias + " dias de idade");
     }
 }
+
+
+
+
+
+
+
+
+
+Atividade1
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a, b, c;
+
+        System.out.println("Informe o valor de A:");
+        a = sc.nextInt();
+        System.out.println("Informe o valor de B:");
+        b = sc.nextInt();
+        System.out.println("Informe o valor de C:");
+        c = sc.nextInt();
+
+        int resultado = soma(a, b);
+
+        if (resultado<c) {
+            System.out.println("A soma de " + a + " + " + b + " = " + resultado + ", e menor que " + c);
+        } else {
+            System.out.println("A soma de " + a + " + " + b + " = " + resultado + ",nao e menor que " + c);
+        }
+
+    }
+
+    public static int soma(int num1, int num2) {
+        return num1 + num2;
+    }
+}
+
+
+
+
+
+
+
+Atividade2
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite seu nome:");
+        String nome = sc.nextLine();
+        System.out.println("Digite o seu sexo(M, F)");
+        String sexo = sc.nextLine();
+        System.out.println("Digite o seu estado civil");
+        String estadoCivil = sc.nextLine();
+
+        if (sexo.equals("F") && estadoCivil.equals("CASADA")) {
+            System.out.println("Digite a qunatos anos voce esta casada");
+            int anos = sc.nextInt();
+        }
+
+    }
+}
+
+
+
+//Faça um algoritmo que leia o nome, o sexo e o estado civil de uma pessoa. Caso sexo seja
+//“F” e estado civil seja “CASADA”, solicitar o tempo de casada (anos).
+
+
+
+
+
+
+
